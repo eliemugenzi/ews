@@ -1,0 +1,11 @@
+@import './abstracts/variables';
+@import './abstracts/mixins';
+
+@import './components/header';
+@import './components/pages/home';
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $main-font;
+}

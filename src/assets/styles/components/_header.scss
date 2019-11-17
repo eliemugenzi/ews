@@ -1,0 +1,28 @@
+
+.header{
+    background: darken($primary,5%);
+    height:70px;
+    position: fixed;
+    width: 100%;
+    z-index:10;
+    nav{
+        margin:auto 20%;
+        display: flex;
+        justify-content: space-between;
+        color:$white;
+        padding-top:20px;
+        .nav{
+            &__links{
+                display: flex;
+                list-style: none;;
+                &--item{
+                    margin-right: 20px;
+                    a{
+                        text-decoration: none;
+                        color:$white;
+                    }
+                }
+            }
+        }
+    }
+}
