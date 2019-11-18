@@ -1,5 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Slider from 'react-slick';
+
+const sliderOptions={
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    autoplay: true,
+    autoplaySpeed: 2000
+}
 
 const Home = () => {
     return (
@@ -83,10 +95,10 @@ const Home = () => {
                                 <i className="ti-layers" />
                             </div>
                             <div className="mobile__grid--item desc">
-                               <h3 className="mobile__grid--heading">Android Development</h3>
+                               <h3 className="mobile__grid--heading">Android &amp; IOS Development</h3>
                                <p className="mobile__grid--details">
                                Need a mobile app? We analyze your needs and use the right stack. 
-                               Depending on the scope of your project , we use (Kotlin,Java,Flutter or NativeScript)
+                               Depending on the scope of your project , we use (Kotlin,Java,Flutter)
                                </p>
                             </div>
                         </div>
@@ -193,23 +205,41 @@ const Home = () => {
         </div>
         <div className="sponsors mt-5 mb-5">
             <div className="container">
-                <div className="sponsors__grid">
-                    <div className="sponsors__grid--item">
-                        <img src="http://ejobu-ews.netlify.com/assets/img/logo/ambassade.jpeg" alt=""/>
-                    </div>
-                    <div className="sponsors__grid--item">
-                        <img src="http://ejobu-ews.netlify.com/assets/img/logo/future.png" alt=""/>
-                    </div>
-                    <div className="sponsors__grid--item">
-                        <img src="http://ejobu-ews.netlify.com/assets/img/logo/clot.jpg" alt=""/>
-                    </div>
-                    <div className="sponsors__grid--item">
-                        <img src="http://ejobu-ews.netlify.com/assets/img/logo/smile.png" alt=""/>
-                    </div>
-                    <div className="sponsors__grid--item">
-                        <img src="http://ejobu-ews.netlify.com/assets/img/logo/cross.jpg" alt=""/>
-                    </div>
+                <Slider {...sliderOptions} >
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/ambassade.jpeg" alt=""/>
                 </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/future.png" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/clot.jpg" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/smile.png" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/cross.jpg" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/note.jpg" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/optimal.png" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/qbtime.png" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/monaco.jpg" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/gotell.png" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/spare.png" alt=""/>
+                </div>
+                </Slider>
             </div>
         </div>
         </>
