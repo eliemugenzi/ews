@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 import React, { useState } from 'react'
 
 const Header = () => {
@@ -13,7 +14,10 @@ const Header = () => {
                 <ul className="nav__links">
                     <li className="nav__links--item"><a href="/">Home</a></li>
                     <li className="nav__links--item"><a href="/">Portfolio</a></li>
-                    <li className="nav__links--item"><a href="/">Contact</a></li>
+                    <li className="nav__links--item"><a href="https://wa.me/250785864371?text=I%27m%20interested%20in%20your%20web%20services%20" target="_blank">
+                        <img src="https://image.flaticon.com/icons/svg/134/134937.svg" alt=""/>
+                        <span>Contact</span>
+                    </a></li>
                 </ul>
                 <div className={active? "toggle active" : "toggle"} onClick={()=>setActive(!active)}>
                     <div className="line" />
@@ -25,7 +29,10 @@ const Header = () => {
                 <ul className="nav__mobile--links">
                     <li><a href="/">Home</a></li>
                     <li><a href="/">Portfolio</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li><a href="https://wa.me/250785864371?text=I%27m%20interested%20in%20your%20web%20services%20" target="_blank">
+                        <img src="https://image.flaticon.com/icons/svg/134/134937.svg" alt=""/>
+                        <span>Contact</span>
+                    </a></li>
                 </ul>
             </div>
         </div>

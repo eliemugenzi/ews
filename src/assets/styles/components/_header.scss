@@ -32,6 +32,15 @@
                 list-style: none;;
                 &--item{
                     margin-right: 20px;
+                    img{
+                        position: relative;
+                        height: 35%;
+                        width: 35%;
+                        transform: translateY(-5px);
+                    }
+                    span{
+                        transform:translateY(-5px);
+                    }
                     a{
                         text-decoration: none;
                         color:$white;
@@ -107,6 +116,15 @@
                 a{
                     text-decoration: none;
                     color:$white;
+                    img{
+                        position: relative;
+                        width: 10%;
+                        height: 10%;
+                    }
+
+                    span{
+                        margin-left: 20px;
+                    }
                 }
             }
         }
