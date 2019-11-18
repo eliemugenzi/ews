@@ -1,5 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Slider from 'react-slick';
+
+const sliderOptions={
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    autoplay: true,
+    autoplaySpeed: 2000
+}
 
 const Home = () => {
     return (
@@ -66,6 +78,168 @@ const Home = () => {
                         <p className="web__desc">We create web apps powered by the latest technologies to produce efficient user experience and get you the security you need.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div className="mobile">
+            <div className="container">
+                <div className="row align-items-center">
+                    <div className="col-lg-5 mobile__image">
+                        <img src="http://ejobu-ews.netlify.com/assets/img/banner/about2.png" alt=""/>
+                    </div>
+                    <div className="offset-lg-2 col-lg-5">
+                    <div className="mobile__container">
+                    <div className="mobile__container--item">
+                        <h1 className="mobile__heading">Mobile Application</h1>
+                        <div className="mobile__grid">
+                            <div className="mobile__grid--item icon">
+                                <i className="ti-layers" />
+                            </div>
+                            <div className="mobile__grid--item desc">
+                               <h3 className="mobile__grid--heading">Android &amp; IOS Development</h3>
+                               <p className="mobile__grid--details">
+                               Need a mobile app? We analyze your needs and use the right stack. 
+                               Depending on the scope of your project , we use (Kotlin,Java,Flutter)
+                               </p>
+                            </div>
+                        </div>
+                        <div className="mobile__grid next">
+                            <div className="mobile__grid--item icon">
+                                <i className="ti-layers" />
+                            </div>
+                            <div className="mobile__grid--item desc">
+                               <h3 className="mobile__grid--heading">USSD</h3>
+                               <p className="mobile__grid--details">
+                               Operating in Africa means that most of your clients will have feature phones or be in areas without internet. 
+                               Let them access your services via a USSD
+                               </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="desktop mt-5 mb-5">
+            <div className="container">
+                <div className="desktop__grid">
+                    <div className="desktop__grid--item">
+                        <div className="desktop__grid--image">
+                            <img src="http://ejobu-ews.netlify.com/assets/img/banner/about3.png" alt=""/>
+                        </div>
+                    </div>
+                    <div className="desktop__grid--item mt-5">
+                        <h1 className="desktop__title">Desktop Applications</h1>
+                        <h5 className="desktop__subtitle">If you need an offline solution</h5>
+                        <p className="desktop__desc">
+                        Desktops application are not dead! If your business application need a performance that the web can not offer, a desktop app can be the solution. We use C++, the fatest language , to build high performant and flawless application.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="work mt-5 mb-5">
+            <div className="container">
+               <h1 className="work__title mt-5 mb-5">Some of our work</h1>
+               <div className="work__grid grid--first">
+                   <div className="work__grid--item">
+                       <img src="http://ejobu-ews.netlify.com/assets/img/apple.jpg" alt=""/>
+                       <div className="work__desc">
+                           <div className="desc__flex">
+                               <div className="desc__flex--item">
+                                   <span>Website/Dashboard</span>
+                               </div>
+                               <div className="desc__flex--item">
+                                   <p>eJobu | The platform for jobs and application process management</p>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div className="work__grid--item">
+                       <div>
+                         <img src="http://ejobu-ews.netlify.com/assets/img/embassy.jpg" alt=""/>
+                         <div className="work__more">
+                         <div className="desc__flex no--transform">
+                               <div className="desc__flex--item">
+                                   <span>Website/Fintech</span>
+                               </div>
+                               <div className="desc__flex--item">
+                                   <p>Embassy of Rwanda in France</p>
+                               </div>
+                           </div>
+                         </div>
+                       </div>
+                   </div>
+               </div>
+               <div className="work__grid grid--last mt-5 mb-5">
+                   <div className="work__grid--item">
+                       <img src="http://ejobu-ews.netlify.com/assets/img/hope.jpg" alt=""/>
+                       <div className="work__more">
+                         <div className="desc__flex no--transform">
+                               <div className="desc__flex--item">
+                                   <span>Website/Fintech</span>
+                               </div>
+                               <div className="desc__flex--item">
+                                   <p>Embassy of Rwanda in France</p>
+                               </div>
+                           </div>
+                         </div>
+                   </div>
+                   <div className="work__grid--item">
+                       <div>
+                         <img src="http://ejobu-ews.netlify.com/assets/portfolio/hellomed.PNG" alt=""/>
+                         <div className="work__desc">
+                         <div className="desc__flex">
+                               <div className="desc__flex--item">
+                                   <span>Software/Dashboard</span>
+                               </div>
+                               <div className="desc__flex--item">
+                                   <p>HelloMed, find a doctor online</p>
+                               </div>
+                           </div>
+                         </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+        <div className="sponsors mt-5 mb-5">
+            <div className="container">
+                <Slider {...sliderOptions} >
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/ambassade.jpeg" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/future.png" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/clot.jpg" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/smile.png" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/cross.jpg" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/note.jpg" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/optimal.png" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/qbtime.png" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/monaco.jpg" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/gotell.png" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src="http://ejobu-ews.netlify.com/assets/img/logo/spare.png" alt=""/>
+                </div>
+                </Slider>
             </div>
         </div>
         </>
