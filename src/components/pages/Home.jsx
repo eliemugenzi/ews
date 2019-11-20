@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 
+import QubiticaLogo from '../../assets/images/logo-homepage2.png';
+
 const sliderOptions={
     dots: false,
     infinite: true,
@@ -238,6 +240,9 @@ const Home = () => {
                 </div>
                 <div className="sponsors__grid--item">
                     <img src="http://ejobu-ews.netlify.com/assets/img/logo/spare.png" alt=""/>
+                </div>
+                <div className="sponsors__grid--item">
+                    <img src={QubiticaLogo} alt=""/>
                 </div>
                 </Slider>
             </div>
